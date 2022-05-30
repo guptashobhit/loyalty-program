@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_rewards
+  resources :rewards
   resources :points
   resources :spends
   resources :users
