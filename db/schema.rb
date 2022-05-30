@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_30_170223) do
   enable_extension "plpgsql"
 
   create_table "points", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.bigint "amount", null: false
+    t.bigint "amount"
     t.datetime "earned_on"
     t.integer "entry_type", default: 0
     t.datetime "expired_on"
